@@ -1,8 +1,8 @@
 name              'custom'
-maintainer        'Chef Software, Inc.'
-maintainer_email  'cookbooks@opscode.com'
+maintainer        'David F. Severski'
+maintainer_email  'davidski@deadheaven.com'
 license           'MIT'
-description       'Configures apt and apt services and LWRPs for managing apt repositories and preferences'
+description       'My first cookbooks'
 long_description  IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version           '2.3.9'
+version           '0.1'
 
