@@ -25,7 +25,7 @@
 #
 include_recipe "logstash"
 begin
-	r = resources(:template => "#{node['logstash']['basedir']}/templates/elk_test.conf.erb"
+	r = resources(:template => "#{node['logstash']['basedir']}/templates/elk_test.conf.erb")
 	r.cookbooks "wrapper-logstash"
 rescue Chef::Exceptions::ResourceNotFound
 	Chef::Log.warn "Could not find template to override!"
