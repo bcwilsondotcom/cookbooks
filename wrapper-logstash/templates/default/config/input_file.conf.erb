@@ -1,0 +1,9 @@
+input {
+  file {
+    exclude => ["<%= @input_file_exclude %>"]
+    path => ["<%= @input_file_name %>"]
+    type => ["<%= @input_file_type %>"]
+    tags => ['sidewinder']
+    start_position => ["<%= @input_file_position %>"]
+  }
+}

@@ -1,0 +1,5 @@
+output {
+  redis {
+    data_type => 'channel'
+    host => ["<%= @output_redis_host %>"]
+}

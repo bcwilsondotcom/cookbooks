@@ -1,0 +1,7 @@
+input {
+  redis {
+    host => ["<%= @input_redis_host %>"]
+    type => ["<%= @input_redis_type %>"]
+    tags => ['sidewinder']
+  }
+}
