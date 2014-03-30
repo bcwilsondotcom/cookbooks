@@ -1,5 +1,8 @@
 output {
   elasticsearch {
+<% if @elasticsearch_cluster -%>
+    cluster => "<%= @elasticsearch_cluster %>"
+<% end -%>
 <% if @elasticsearch_ip -%>
     host => "<%= @elasticsearch_ip %>"
 <% end -%>
