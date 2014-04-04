@@ -25,14 +25,22 @@
 #
 
 name = 'server'
-attributes = node['logstash']['instance'][name]
 
-# these should all default correctly.  listing out for example.
+#force override our attributes (or attempt to anyways)
+#attributes = node['logstash']['instance'][name]
+node.force_override['logstash']['instance']['server']['config_templates'] = {}
+node.force_override['logstash']['instance']['server']['config_templates'] = {
+  'input_redis' => 'config/input_redis.conf.erb',
+  'filter_sidewinder' => 'config/filter_sidewinder.conf.erb',
+  'output_elasticsearch' => 'config/output_elasticsearch.conf.erb'
+}
+
+# create the server instance
 logstash_instance name do
   action            :create
 end
 
-# services are hard! Let's go LWRP'ing.   FIREBALL! FIREBALL! FIREBALL!
+# enable and start the service
 logstash_service name do
   action      [:enable, :start]
 end
@@ -41,15 +49,15 @@ es_ip = service_ip(name, 'elasticsearch')
 
 # create our configuration files from the provided templates
 logstash_config name do
+  Chef::Log.info("config vars: #{node['logstash']['instance']['server'].inspect}")
   action [:create]
   variables(
       elasticsearch_ip: es_ip,
-      elasticsearch_embedded: true
+      elasticsearch_embedded: false
   )
 end
 
+# create our custom patterns
 logstash_pattern name do
   action [:create]
 end
-
-
