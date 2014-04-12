@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: wrapper-logstash
-# Recipe:: indexer
+# Recipe:: reader
 #
 # Copyright (C) 2014 David F. Severski
 # 
@@ -33,9 +33,8 @@ node.normal['logstash']['instance'][name]['config_templates'].keys.each do |k|
 end
 
 node.force_override['logstash']['instance']['server']['config_templates'] = {
-  'input_redis' => 'config/input_redis.conf.erb',
-  'filter_sidewinder' => 'config/filter_sidewinder.conf.erb',
-  'output_elasticsearch' => 'config/output_elasticsearch.conf.erb'
+  'input_file' => 'config/input_file.conf.erb',
+  'output_redis' => 'config/output_redis.conf.erb'
 }
 
 # create the server instance
@@ -55,22 +54,15 @@ logstash_config name do
   #Chef::Log.info("config vars: #{node['logstash']['instance']['server'].inspect}")
   action [:create]
   variables(
-      elasticsearch_ip: "10.0.0.41",
-      elasticsearch_embedded: false,
-      elasticsearch_template: "/opt/logstash/server/etc/elasticsearch_template.json",
-      elasticsearch_cluster: "elkrun"
-      elasticsearch_protocol: "http"
-      input_redis_host: "10.0.0.21",
-      input_redis_datatype: "list",
-      input_redis_type: "sidewinder"
+    elasticsearch_ip: es_ip,
+    elasticsearch_embedded: false,
+    input_file_exclude: "*.gz",
+    input_file_name: "/vagrant/logs/13*",
+    input_file_type: "sidewinder",
+    input_file_position: "beginning",
+    output_redis_datatype: "list",
+    output_redis_host: "10.0.0.21"
   )
-end
-
-# create custom ES index template
-template "/opt/logstash/server/etc/elasticsearch_template.json" do
-  source "elasticsearch_template.json.erb"
-  owner "logstash"
-  group "logstash"
 end
 
 # create our custom patterns
