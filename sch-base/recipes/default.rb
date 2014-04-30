@@ -5,7 +5,7 @@
 # Copyright (C) 2014 David F. Severski
 
 package "screen"
-package "htop"
+#package "htop"
 
 #if node['cloud']['provider'] == 'ec2'
   #homeuser = 'ec2-user'
