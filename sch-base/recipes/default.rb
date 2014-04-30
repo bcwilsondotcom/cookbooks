@@ -1,17 +1,19 @@
 #
-# Cookbook Name:: custom
+# Cookbook Name:: sch-base
 # Recipe:: default
 #
-# Copyright (C) 2014 YOUR_NAME
+# Copyright (C) 2014 David F. Severski
 
 package "screen"
 package "htop"
 
 #if node['cloud']['provider'] == 'ec2'
-  homeuser = 'ec2-user'
+  #homeuser = 'ec2-user'
+  #homeuser = 'ubuntu'
 #else
 #  homeuser = 'vagrant'
 #end
+homeuser = node['current_user']
 
 directory "/home/#{homeuser}/.config" do
   action :create
