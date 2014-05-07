@@ -4,16 +4,23 @@
 #
 # Copyright (C) 2014 David F. Severski
 
+include_recipe 'htop'
+
 package "screen"
+package "tcpdump"
 #package "htop"
 
-#if node['cloud']['provider'] == 'ec2'
-  #homeuser = 'ec2-user'
-  #homeuser = 'ubuntu'
-#else
-#  homeuser = 'vagrant'
-#end
-homeuser = node['current_user']
+if node.attribute?('cloud') && node['cloud']['provider'] == "ec2"
+  case node["platform_familly"]
+    when "debian"
+      homeuser = 'ubuntu'
+    when "rhel"
+      homeuser = 'ec2-user'
+    end
+else
+  homeuser = 'vagrant'
+end
+#homeuser = node['current_user']
 
 directory "/home/#{homeuser}/.config" do
   action :create
@@ -30,9 +37,10 @@ end
 
 package "lsof"
 
-directory "/es" do
-	action :create
-end
+#elasticsearch recipie takes care of all of tis
+#directory "/es" do
+#	action :create
+#end
 
 #mount "/es" do
 #	device "/dev/sdb1"
