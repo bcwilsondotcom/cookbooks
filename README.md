@@ -8,14 +8,14 @@ Custom Chef cookbooks
 
 ES-Curator
 ----------
-Setup ElasticSearch index curator
+Set up ElasticSearch index curator
 
 SCH-Base
 --------
-Setup core linux configuration
+Set up core linux configuration
 
 SCH-Logstash
 ------------
-Logstash reader and indexer configuration
-[sch-logstash::reader]
+Logstash shipper and indexer configuration
+[sch-logstash::shipper]
 [sch-logstash::indexer]
