@@ -26,7 +26,6 @@
 
 include_recipie 'collectd::default'
 
-# create the server instance
 collectd_plugin "cpu" do
   action            :create
 end
@@ -46,4 +45,3 @@ end
 collectd_plugin "write_graphite" do
   action            :create
 end
-\
