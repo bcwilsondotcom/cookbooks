@@ -24,7 +24,8 @@
 # WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #
 
-include_recipie 'collectd::default'
+node.override["collectd"]["url"] = 'http://s3.amazonaws.com/collectd-5.4.1/collectd-5.4.1.tar.gz'
+include_recipe 'collectd::default'
 
 collectd_plugin "cpu" do
   action            :create
