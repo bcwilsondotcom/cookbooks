@@ -4,14 +4,14 @@
 #
 # Copyright (C) 2014 David F. Severski
 
-#include_recipe 'htop'
+include_recipe 'htop'
 
 package "screen"
 package "tcpdump"
-package "htop"
+#package "htop"
 
 if node.attribute?('cloud') && node['cloud']['provider'] == "ec2"
-  case node["platform_family"]
+  case node["platform_familly"]
     when "debian"
       homeuser = 'ubuntu'
     when "rhel"
