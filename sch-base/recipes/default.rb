@@ -8,6 +8,12 @@
 
 package "screen"
 package "tcpdump"
+
+#install htop
+case node["platform_family"]
+  when "rhel"
+    include_recipe 'yum-repoforge'
+end
 package "htop"
 
 if node.attribute?('cloud') && node['cloud']['provider'] == "ec2"
