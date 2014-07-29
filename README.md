@@ -26,8 +26,13 @@ SCH-Elasticsearch
 -----------------
 Wrapper cookbook for Elasticsearch.
 
+SCH-Kibana
+----------
+Wrapper cookbok for Kibana LWRP.
+
 SCH-Logstash
 ------------
 Logstash shipper and indexer configuration.
 [sch-logstash::shipper]
+
 [sch-logstash::indexer]
