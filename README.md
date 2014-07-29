@@ -31,7 +31,3 @@ SCH-Logstash
 Logstash shipper and indexer configuration.
 [sch-logstash::shipper]
 [sch-logstash::indexer]
-
-Security-Monkey
----------------
-Deploy the Netflix OSS Security Monkey.
