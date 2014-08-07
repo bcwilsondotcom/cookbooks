@@ -26,6 +26,10 @@ SCH-Elasticsearch
 -----------------
 Wrapper cookbook for Elasticsearch.
 
+SCH-Redis-Monitor
+-----------------
+Install CloudWatch monitor script for redis when used as a logstash buffer.
+
 SCH-Kibana
 ----------
 Wrapper cookbok for Kibana LWRP.
