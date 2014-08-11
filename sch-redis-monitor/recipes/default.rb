@@ -28,9 +28,9 @@ cookbook_file "#node['homedir']/monitor.sh" do
   mode 0755
 end
 
-cron_d 'mode' do
+cron_d 'redis-monitor' do
   action :create
   minute  *
-  hour    node['elasticsearch-curator']['hour_to_run']
+  hour    *
   command "#node['homedir']/monitor.sh"
 end
