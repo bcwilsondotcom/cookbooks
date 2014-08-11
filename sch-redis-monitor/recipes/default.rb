@@ -23,14 +23,14 @@
 # OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 # WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #
-file "#node['homedir']/monitor.sh" do
-	source "monitor.sh"
-	mode 0755
+cookbook_file "#node['homedir']/monitor.sh" do
+  source "monitor.sh"
+  mode 0755
 end
 
 cron_d 'mode' do
   action :create
   minute  *
-  hour    "#{node['elasticsearch-curator']['hour_to_run']}"
+  hour    node['elasticsearch-curator']['hour_to_run']
   command "#node['homedir']/monitor.sh"
 end
