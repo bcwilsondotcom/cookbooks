@@ -23,7 +23,7 @@
 # OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 # WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #
-cookbook_file "#node['homedir']/monitor.sh" do
+cookbook_file "/home/#{node['current_user']}/monitor.sh" do
   source "monitor.sh"
   mode 0755
 end
@@ -32,5 +32,5 @@ cron_d 'redis-monitor' do
   action :create
   minute  *
   hour    *
-  command "#node['homedir']/monitor.sh"
+  command "/home/#{node['current_user']}/monitor.sh"
 end
