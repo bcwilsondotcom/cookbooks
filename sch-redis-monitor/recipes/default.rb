@@ -30,7 +30,7 @@ end
 
 cron_d 'redis-monitor' do
   action :create
-  minute  *
-  hour    *
+  minute  "*"
+  hour    "*"
   command "/home/#{node['current_user']}/monitor.sh"
 end
