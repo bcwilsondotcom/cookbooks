@@ -1,5 +1,4 @@
 #!/bin/bash
-
 #Name: monitor.sh
 #Purpose: Send #er of events queued in redis to AWS CloudWatch
 #Date: 8/11/2014
