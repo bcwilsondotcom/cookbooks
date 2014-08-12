@@ -27,22 +27,8 @@
 node.override["collectd"]["url"] = 'http://s3.amazonaws.com/collectd-5.4.1/collectd-5.4.1.tar.gz'
 include_recipe 'collectd::default'
 
-collectd_plugin "cpu" do
-  action            :create
-end
-
-collectd_plugin "interface" do
-  action            :create
-end
-
-collectd_plugin "load" do
-  action            :create
-end
-
-collectd_plugin "memory" do
-  action            :create
-end
-
-collectd_plugin "write_graphite" do
-  action            :create
+%w(cpu interface load memory write_graphite).each do |plugin|
+  collectd_plugin plugin do
+    action            :create
+  end
 end
