@@ -46,6 +46,6 @@ end
 
 Chef::Log.info("About to install mongo client version: #{node['mongodb']['version']}")
 package "mongodb-org-shell" do
-  version #{node['mongodb']['version']}
+  version node['mongodb']['version']
   action :upgrade
 end
