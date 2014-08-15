@@ -1,0 +1,370 @@
+I, [2014-08-13T20:54:07.111982 #9056]  INFO -- default-ubuntu-1404: -----> Creating <default-ubuntu-1404>...
+I, [2014-08-13T20:54:10.297165 #9056]  INFO -- default-ubuntu-1404: Bringing machine 'default' up with 'vmware_workstation' provider...
+I, [2014-08-13T20:54:14.470403 #9056]  INFO -- default-ubuntu-1404: ==> default: Cloning VMware VM: 'opscode-ubuntu-14.04'. This can take some time...
+I, [2014-08-13T20:54:22.530864 #9056]  INFO -- default-ubuntu-1404: ==> default: Verifying vmnet devices are healthy...
+I, [2014-08-13T20:54:23.408914 #9056]  INFO -- default-ubuntu-1404: [0mSkipping Berkshelf with --no-provision[0m
+I, [2014-08-13T20:54:24.112955 #9056]  INFO -- default-ubuntu-1404: ==> default: Preparing network adapters...
+I, [2014-08-13T20:54:25.169015 #9056]  INFO -- default-ubuntu-1404: ==> default: Starting the VMware VM...
+==> default: Waiting for machine to boot. This may take a few minutes...I, [2014-08-13T20:54:31.624885 #9056]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T20:54:55.785811 #9056]  INFO -- default-ubuntu-1404:     default: SSH address: 192.168.91.186:22
+I, [2014-08-13T20:54:55.785811 #9056]  INFO -- default-ubuntu-1404:     default: SSH username: vagrant
+I, [2014-08-13T20:54:55.786811 #9056]  INFO -- default-ubuntu-1404:     default: SSH auth method: private key
+I, [2014-08-13T20:54:59.622058 #9056]  INFO -- default-ubuntu-1404: ==> default: Machine booted and ready!
+I, [2014-08-13T20:54:59.638059 #9056]  INFO -- default-ubuntu-1404: ==> default: Forwarding ports...
+I, [2014-08-13T20:54:59.638059 #9056]  INFO -- default-ubuntu-1404:     default: -- 22 => 2222
+I, [2014-08-13T20:55:01.290166 #9056]  INFO -- default-ubuntu-1404: ==> default: Setting hostname...
+I, [2014-08-13T20:55:22.412404 #9056]  INFO -- default-ubuntu-1404: ==> default: Configuring network adapters within the VM...
+I, [2014-08-13T20:55:23.181448 #9056]  INFO -- default-ubuntu-1404: ==> default: Machine not provisioning because `--no-provision` is specified.
+I, [2014-08-13T20:55:27.558698 #9056]  INFO -- default-ubuntu-1404: Vagrant instance <default-ubuntu-1404> created.
+I, [2014-08-13T20:55:27.566698 #9056]  INFO -- default-ubuntu-1404: Finished creating <default-ubuntu-1404> (1m20.45s).
+I, [2014-08-13T20:55:27.567698 #9056]  INFO -- default-ubuntu-1404: -----> Converging <default-ubuntu-1404>...
+I, [2014-08-13T20:55:27.572699 #9056]  INFO -- default-ubuntu-1404: Preparing files for transfer
+I, [2014-08-13T20:55:27.577699 #9056]  INFO -- default-ubuntu-1404: Resolving cookbook dependencies with Berkshelf 3.1.5...
+I, [2014-08-13T20:55:34.579101 #9056]  INFO -- default-ubuntu-1404: Removing non-cookbook files before transfer
+-----> Installing Chef Omnibus (true)I, [2014-08-13T20:55:35.082131 #9056]  INFO -- default-ubuntu-1404: 
+downloading https://www.getchef.com/chef/install.shI, [2014-08-13T20:55:35.084131 #9056]  INFO -- default-ubuntu-1404: 
+  to file /tmp/install.shI, [2014-08-13T20:55:35.085131 #9056]  INFO -- default-ubuntu-1404: 
+trying wget...I, [2014-08-13T20:55:35.087132 #9056]  INFO -- default-ubuntu-1404: 
+Downloading Chef  for ubuntu...I, [2014-08-13T20:55:35.727168 #9056]  INFO -- default-ubuntu-1404: 
+downloading https://www.getchef.com/chef/metadata?v=&prerelease=false&nightlies=false&p=ubuntu&pv=14.04&m=x86_64I, [2014-08-13T20:55:35.734169 #9056]  INFO -- default-ubuntu-1404: 
+  to file /tmp/install.sh.1563/metadata.txtI, [2014-08-13T20:55:35.735169 #9056]  INFO -- default-ubuntu-1404: 
+trying wget...I, [2014-08-13T20:55:35.737169 #9056]  INFO -- default-ubuntu-1404: 
+url	https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/x86_64/chef_11.14.2-1_amd64.debI, [2014-08-13T20:55:36.172194 #9056]  INFO -- default-ubuntu-1404: 
+md5	e6a41d4a2be5ca38f3abacfb3fbd97cbI, [2014-08-13T20:55:36.174194 #9056]  INFO -- default-ubuntu-1404: 
+sha256	dcf09ee1c600ed0e48ed4d5fa1455582153889d0640bf0b45f572d19b4bb9a9fI, [2014-08-13T20:55:36.177194 #9056]  INFO -- default-ubuntu-1404: 
+downloaded metadata file looks valid...I, [2014-08-13T20:55:36.178194 #9056]  INFO -- default-ubuntu-1404: 
+downloading https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/x86_64/chef_11.14.2-1_amd64.debI, [2014-08-13T20:55:36.179194 #9056]  INFO -- default-ubuntu-1404: 
+  to file /tmp/install.sh.1563/chef_11.14.2-1_amd64.debI, [2014-08-13T20:55:36.180194 #9056]  INFO -- default-ubuntu-1404: 
+trying wget...I, [2014-08-13T20:55:36.181194 #9056]  INFO -- default-ubuntu-1404: 
+Comparing checksum with sha256sum...I, [2014-08-13T20:56:35.300576 #9056]  INFO -- default-ubuntu-1404: 
+Installing Chef I, [2014-08-13T20:56:35.856607 #9056]  INFO -- default-ubuntu-1404: 
+installing with dpkg...I, [2014-08-13T20:56:35.858607 #9056]  INFO -- default-ubuntu-1404: 
+Selecting previously unselected package chef.I, [2014-08-13T20:56:36.046618 #9056]  INFO -- default-ubuntu-1404: 
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 32352 files and directories currently installed.)I, [2014-08-13T20:56:36.454642 #9056]  INFO -- default-ubuntu-1404: 
+Preparing to unpack .../chef_11.14.2-1_amd64.deb ...I, [2014-08-13T20:56:36.456642 #9056]  INFO -- default-ubuntu-1404: 
+Unpacking chef (11.14.2-1) ...I, [2014-08-13T20:56:36.458642 #9056]  INFO -- default-ubuntu-1404: 
+Setting up chef (11.14.2-1) ...I, [2014-08-13T20:56:50.233430 #9056]  INFO -- default-ubuntu-1404: 
+Thank you for installing Chef!I, [2014-08-13T20:56:50.295433 #9056]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T20:56:50.457442 #9056]  INFO -- default-ubuntu-1404: Transfering files to <default-ubuntu-1404>
+[2014-08-14T03:56:57+00:00] INFO: Forking chef instance to converge...I, [2014-08-13T20:56:57.642853 #9056]  INFO -- default-ubuntu-1404: 
+[2014-08-14T03:56:57+00:00] WARN: I, [2014-08-13T20:56:57.654854 #9056]  INFO -- default-ubuntu-1404: 
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *I, [2014-08-13T20:56:57.655854 #9056]  INFO -- default-ubuntu-1404: 
+SSL validation of HTTPS requests is disabled. HTTPS connections are stillI, [2014-08-13T20:56:57.656854 #9056]  INFO -- default-ubuntu-1404: 
+encrypted, but chef is not able to detect forged replies or man in the middleI, [2014-08-13T20:56:57.657854 #9056]  INFO -- default-ubuntu-1404: 
+attacks.I, [2014-08-13T20:56:57.659854 #9056]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T20:56:57.659854 #9056]  INFO -- default-ubuntu-1404: 
+To fix this issue add an entry like this to your configuration file:I, [2014-08-13T20:56:57.661855 #9056]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T20:56:57.661855 #9056]  INFO -- default-ubuntu-1404: 
+```I, [2014-08-13T20:56:57.662855 #9056]  INFO -- default-ubuntu-1404: 
+  # Verify all HTTPS connections (recommended)I, [2014-08-13T20:56:57.664855 #9056]  INFO -- default-ubuntu-1404: 
+  ssl_verify_mode :verify_peerI, [2014-08-13T20:56:57.671855 #9056]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T20:56:57.672855 #9056]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T20:56:57.672855 #9056]  INFO -- default-ubuntu-1404:   # OR, Verify only connections to chef-server
+I, [2014-08-13T20:56:57.672855 #9056]  INFO -- default-ubuntu-1404:   verify_api_cert true
+I, [2014-08-13T20:56:57.672855 #9056]  INFO -- default-ubuntu-1404: ```
+I, [2014-08-13T20:56:57.672855 #9056]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T20:56:57.672855 #9056]  INFO -- default-ubuntu-1404: To check your SSL configuration, or troubleshoot errors, you can use the
+I, [2014-08-13T20:56:57.672855 #9056]  INFO -- default-ubuntu-1404: `knife ssl check` command like so:
+I, [2014-08-13T20:56:57.672855 #9056]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T20:56:57.673855 #9056]  INFO -- default-ubuntu-1404: ```
+I, [2014-08-13T20:56:57.673855 #9056]  INFO -- default-ubuntu-1404:   knife ssl check -c /tmp/kitchen/solo.rb
+I, [2014-08-13T20:56:57.673855 #9056]  INFO -- default-ubuntu-1404: ```
+I, [2014-08-13T20:56:57.673855 #9056]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T20:56:57.673855 #9056]  INFO -- default-ubuntu-1404: * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+I, [2014-08-13T20:56:57.673855 #9056]  INFO -- default-ubuntu-1404: 
+Starting Chef Client, version 11.14.2[0mI, [2014-08-13T20:56:57.840865 #9056]  INFO -- default-ubuntu-1404: 
+[2014-08-14T03:56:57+00:00] INFO: *** Chef 11.14.2 ***I, [2014-08-13T20:56:57.842865 #9056]  INFO -- default-ubuntu-1404: 
+[2014-08-14T03:56:57+00:00] INFO: Chef-client pid: 1664I, [2014-08-13T20:56:57.843865 #9056]  INFO -- default-ubuntu-1404: 
+[2014-08-14T03:57:01+00:00] INFO: Setting the run_list to ["recipe[sch-mongodb::client]"] from CLI optionsI, [2014-08-13T20:57:01.510075 #9056]  INFO -- default-ubuntu-1404: 
+[2014-08-14T03:57:01+00:00] INFO: Run List is [recipe[sch-mongodb::client]]I, [2014-08-13T20:57:01.542076 #9056]  INFO -- default-ubuntu-1404: 
+[2014-08-14T03:57:01+00:00] INFO: Run List expands to [sch-mongodb::client]I, [2014-08-13T20:57:01.550077 #9056]  INFO -- default-ubuntu-1404: 
+[2014-08-14T03:57:01+00:00] INFO: Starting Chef Run for default-ubuntu-1404I, [2014-08-13T20:57:01.554077 #9056]  INFO -- default-ubuntu-1404: 
+[2014-08-14T03:57:01+00:00] INFO: Running start handlersI, [2014-08-13T20:57:01.603080 #9056]  INFO -- default-ubuntu-1404: 
+[2014-08-14T03:57:01+00:00] INFO: Start handlers complete.I, [2014-08-13T20:57:01.604080 #9056]  INFO -- default-ubuntu-1404: 
+Compiling Cookbooks...[0mI, [2014-08-13T20:57:01.616081 #9056]  INFO -- default-ubuntu-1404: 
+[0mI, [2014-08-13T20:57:01.769089 #9056]  INFO -- default-ubuntu-1404: 
+================================================================================[0mI, [2014-08-13T20:57:01.771090 #9056]  INFO -- default-ubuntu-1404: 
+[31mRecipe Compile Error in /tmp/kitchen/cookbooks/sch-mongodb/attributes/default.rb[0mI, [2014-08-13T20:57:01.773090 #9056]  INFO -- default-ubuntu-1404: 
+================================================================================[0mI, [2014-08-13T20:57:01.774090 #9056]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T20:57:01.775090 #9056]  INFO -- default-ubuntu-1404: 
+[0mSyntaxError[0mI, [2014-08-13T20:57:01.778090 #9056]  INFO -- default-ubuntu-1404: 
+-----------[0mI, [2014-08-13T20:57:01.780090 #9056]  INFO -- default-ubuntu-1404: 
+/tmp/kitchen/cookbooks/sch-mongodb/attributes/default.rb:2: unterminated string meets end of file[0mI, [2014-08-13T20:57:01.781090 #9056]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T20:57:01.782090 #9056]  INFO -- default-ubuntu-1404: 
+[0mCookbook Trace:[0mI, [2014-08-13T20:57:01.786090 #9056]  INFO -- default-ubuntu-1404: 
+---------------[0mI, [2014-08-13T20:57:01.787090 #9056]  INFO -- default-ubuntu-1404: 
+  /opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.14.2/lib/chef/mixin/from_file.rb:30:in `instance_eval'I, [2014-08-13T20:57:01.789091 #9056]  INFO -- default-ubuntu-1404: 
+[0m  /opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.14.2/lib/chef/mixin/from_file.rb:30:in `from_file'I, [2014-08-13T20:57:01.792091 #9056]  INFO -- default-ubuntu-1404: 
+[0m  /opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.14.2/lib/chef/dsl/include_attribute.rb:39:in `block in include_attribute'I, [2014-08-13T20:57:01.794091 #9056]  INFO -- default-ubuntu-1404: 
+[0m  /opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.14.2/lib/chef/dsl/include_attribute.rb:31:in `each'I, [2014-08-13T20:57:01.796091 #9056]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T20:57:01.796091 #9056]  INFO -- default-ubuntu-1404: [0m  /opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.14.2/lib/chef/dsl/include_attribute.rb:31:in `include_attribute'
+I, [2014-08-13T20:57:01.796091 #9056]  INFO -- default-ubuntu-1404: [0m  /opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.14.2/lib/chef/run_context/cookbook_compiler.rb:181:in `load_attribute_file'
+I, [2014-08-13T20:57:01.796091 #9056]  INFO -- default-ubuntu-1404: [0m  /opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.14.2/lib/chef/run_context/cookbook_compiler.rb:170:in `load_attributes_from_cookbook'
+I, [2014-08-13T20:57:01.796091 #9056]  INFO -- default-ubuntu-1404: [0m  /opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.14.2/lib/chef/run_context/cookbook_compiler.rb:110:in `block in compile_attributes'
+I, [2014-08-13T20:57:01.800091 #9056]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T20:57:01.800091 #9056]  INFO -- default-ubuntu-1404: [0m  /opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.14.2/lib/chef/run_context/cookbook_compiler.rb:109:in `each'
+I, [2014-08-13T20:57:01.800091 #9056]  INFO -- default-ubuntu-1404: [0m  /opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.14.2/lib/chef/run_context/cookbook_compiler.rb:109:in `compile_attributes'
+I, [2014-08-13T20:57:01.800091 #9056]  INFO -- default-ubuntu-1404: [0m  /opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.14.2/lib/chef/run_context/cookbook_compiler.rb:72:in `compile'
+I, [2014-08-13T20:57:01.800091 #9056]  INFO -- default-ubuntu-1404: [0m  /opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.14.2/lib/chef/run_context.rb:89:in `load'
+I, [2014-08-13T20:57:01.800091 #9056]  INFO -- default-ubuntu-1404: [0m  /opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.14.2/lib/chef/policy_builder/expand_node_object.rb:73:in `setup_run_context'
+I, [2014-08-13T20:57:01.806092 #9056]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T20:57:01.806092 #9056]  INFO -- default-ubuntu-1404: [0m  /opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.14.2/lib/chef/client.rb:265:in `setup_run_context'
+I, [2014-08-13T20:57:01.806092 #9056]  INFO -- default-ubuntu-1404: [0m  /opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.14.2/lib/chef/client.rb:429:in `do_run'
+I, [2014-08-13T20:57:01.806092 #9056]  INFO -- default-ubuntu-1404: [0m  /opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.14.2/lib/chef/client.rb:213:in `block in run'
+I, [2014-08-13T20:57:01.810092 #9056]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T20:57:01.810092 #9056]  INFO -- default-ubuntu-1404: [0m  /opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.14.2/lib/chef/client.rb:207:in `fork'
+I, [2014-08-13T20:57:01.811092 #9056]  INFO -- default-ubuntu-1404: [0m  /opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.14.2/lib/chef/client.rb:207:in `run'
+I, [2014-08-13T20:57:01.811092 #9056]  INFO -- default-ubuntu-1404: [0m  /opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.14.2/lib/chef/application.rb:237:in `run_chef_client'
+I, [2014-08-13T20:57:01.811092 #9056]  INFO -- default-ubuntu-1404: [0m  /opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.14.2/lib/chef/application/solo.rb:226:in `block in run_application'
+I, [2014-08-13T20:57:01.816092 #9056]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T20:57:01.816092 #9056]  INFO -- default-ubuntu-1404: [0m  /opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.14.2/lib/chef/application/solo.rb:218:in `loop'
+I, [2014-08-13T20:57:01.817092 #9056]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T20:57:01.818092 #9056]  INFO -- default-ubuntu-1404: [0m  /opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.14.2/lib/chef/application/solo.rb:218:in `run_application'
+I, [2014-08-13T20:57:01.820092 #9056]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T20:57:01.820092 #9056]  INFO -- default-ubuntu-1404: [0m  /opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.14.2/lib/chef/application.rb:55:in `run'
+I, [2014-08-13T20:57:01.820092 #9056]  INFO -- default-ubuntu-1404: [0m  /opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.14.2/bin/chef-solo:25:in `<top (required)>'
+I, [2014-08-13T20:57:01.822092 #9056]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T20:57:01.822092 #9056]  INFO -- default-ubuntu-1404: [0m  /usr/bin/chef-solo:23:in `load'
+I, [2014-08-13T20:57:01.822092 #9056]  INFO -- default-ubuntu-1404: [0m  /usr/bin/chef-solo:23:in `<main>'[0m
+I, [2014-08-13T20:57:01.823093 #9056]  INFO -- default-ubuntu-1404: 
+[0mRelevant File Content:[0mI, [2014-08-13T20:57:01.826093 #9056]  INFO -- default-ubuntu-1404: 
+----------------------[0mI, [2014-08-13T20:57:01.828093 #9056]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T20:57:01.828093 #9056]  INFO -- default-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.14.2/lib/chef/mixin/from_file.rb:
+I, [2014-08-13T20:57:01.828093 #9056]  INFO -- default-ubuntu-1404: [0m
+I, [2014-08-13T20:57:01.828093 #9056]  INFO -- default-ubuntu-1404: [0m 23:  
+I, [2014-08-13T20:57:01.828093 #9056]  INFO -- default-ubuntu-1404: [0m 24:        # Loads a given ruby file, and runs instance_eval against it in the context of the current
+I, [2014-08-13T20:57:01.832093 #9056]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T20:57:01.832093 #9056]  INFO -- default-ubuntu-1404: [0m 25:        # object.
+I, [2014-08-13T20:57:01.832093 #9056]  INFO -- default-ubuntu-1404: [0m 26:        #
+I, [2014-08-13T20:57:01.834093 #9056]  INFO -- default-ubuntu-1404: 
+[0m 27:        # Raises an IOError if the file cannot be found, or is not readable.I, [2014-08-13T20:57:01.835093 #9056]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T20:57:01.835093 #9056]  INFO -- default-ubuntu-1404: [0m 28:        def from_file(filename)
+I, [2014-08-13T20:57:01.835093 #9056]  INFO -- default-ubuntu-1404: [0m 29:          if File.exists?(filename) && File.readable?(filename)
+I, [2014-08-13T20:57:01.835093 #9056]  INFO -- default-ubuntu-1404: [0m 30>>           self.instance_eval(IO.read(filename), filename, 1)
+I, [2014-08-13T20:57:01.835093 #9056]  INFO -- default-ubuntu-1404: [0m 31:          else
+I, [2014-08-13T20:57:01.835093 #9056]  INFO -- default-ubuntu-1404: [0m 32:            raise IOError, "Cannot open or read #{filename}!"
+I, [2014-08-13T20:57:01.836093 #9056]  INFO -- default-ubuntu-1404: [0m 33:          end
+I, [2014-08-13T20:57:01.840093 #9056]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T20:57:01.840093 #9056]  INFO -- default-ubuntu-1404: [0m 34:        end
+I, [2014-08-13T20:57:01.842094 #9056]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T20:57:01.842094 #9056]  INFO -- default-ubuntu-1404: [0m 35:  
+I, [2014-08-13T20:57:01.842094 #9056]  INFO -- default-ubuntu-1404: [0m 36:        # Loads a given ruby file, and runs class_eval against it in the context of the current
+I, [2014-08-13T20:57:01.842094 #9056]  INFO -- default-ubuntu-1404: [0m 37:        # object.
+I, [2014-08-13T20:57:01.845094 #9056]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T20:57:01.845094 #9056]  INFO -- default-ubuntu-1404: [0m 38:        #
+I, [2014-08-13T20:57:01.846094 #9056]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T20:57:01.846094 #9056]  INFO -- default-ubuntu-1404: [0m 39:        # Raises an IOError if the file cannot be found, or is not readable.
+I, [2014-08-13T20:57:01.846094 #9056]  INFO -- default-ubuntu-1404: [0m
+[0m[0mI, [2014-08-13T20:57:01.850094 #9056]  INFO -- default-ubuntu-1404: 
+Running handlers:[0mI, [2014-08-13T20:57:01.851094 #9056]  INFO -- default-ubuntu-1404: 
+[2014-08-14T03:57:01+00:00] ERROR: Running exception handlersI, [2014-08-13T20:57:01.893097 #9056]  INFO -- default-ubuntu-1404: 
+Running handlers completeI, [2014-08-13T20:57:01.895097 #9056]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T20:57:01.895097 #9056]  INFO -- default-ubuntu-1404: [0m[2014-08-14T03:57:01+00:00] ERROR: Exception handlers complete
+I, [2014-08-13T20:57:01.896097 #9056]  INFO -- default-ubuntu-1404: 
+[2014-08-14T03:57:01+00:00] FATAL: Stacktrace dumped to /tmp/kitchen/cache/chef-stacktrace.outI, [2014-08-13T20:57:01.898097 #9056]  INFO -- default-ubuntu-1404: 
+Chef Client failed. 0 resources updated in 4.151538078 seconds[0mI, [2014-08-13T20:57:01.900097 #9056]  INFO -- default-ubuntu-1404: 
+[2014-08-14T03:57:01+00:00] ERROR: /tmp/kitchen/cookbooks/sch-mongodb/attributes/default.rb:2: unterminated string meets end of fileI, [2014-08-13T20:57:01.901097 #9056]  INFO -- default-ubuntu-1404: 
+[2014-08-14T03:57:01+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)I, [2014-08-13T20:57:01.943099 #9056]  INFO -- default-ubuntu-1404: 
+E, [2014-08-13T20:57:02.086108 #9056] ERROR -- default-ubuntu-1404: Converge failed on instance <default-ubuntu-1404>.
+E, [2014-08-13T20:57:02.086108 #9056] ERROR -- default-ubuntu-1404: ------Exception-------
+E, [2014-08-13T20:57:02.086108 #9056] ERROR -- default-ubuntu-1404: Class: Kitchen::ActionFailed
+E, [2014-08-13T20:57:02.086108 #9056] ERROR -- default-ubuntu-1404: Message: SSH exited (1) for command: [sudo -E chef-solo --config /tmp/kitchen/solo.rb --json-attributes /tmp/kitchen/dna.json  --log_level info]
+E, [2014-08-13T20:57:02.087108 #9056] ERROR -- default-ubuntu-1404: ---Nested Exception---
+E, [2014-08-13T20:57:02.087108 #9056] ERROR -- default-ubuntu-1404: Class: Kitchen::SSHFailed
+E, [2014-08-13T20:57:02.087108 #9056] ERROR -- default-ubuntu-1404: Message: SSH exited (1) for command: [sudo -E chef-solo --config /tmp/kitchen/solo.rb --json-attributes /tmp/kitchen/dna.json  --log_level info]
+E, [2014-08-13T20:57:02.087108 #9056] ERROR -- default-ubuntu-1404: ------Backtrace-------
+E, [2014-08-13T20:57:02.088108 #9056] ERROR -- default-ubuntu-1404: C:/Ruby200/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/ssh_base.rb:112:in `rescue in run_remote'
+E, [2014-08-13T20:57:02.088108 #9056] ERROR -- default-ubuntu-1404: C:/Ruby200/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/ssh_base.rb:108:in `run_remote'
+E, [2014-08-13T20:57:02.088108 #9056] ERROR -- default-ubuntu-1404: C:/Ruby200/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/ssh_base.rb:48:in `block in converge'
+E, [2014-08-13T20:57:02.088108 #9056] ERROR -- default-ubuntu-1404: C:/Ruby200/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/ssh.rb:47:in `initialize'
+E, [2014-08-13T20:57:02.088108 #9056] ERROR -- default-ubuntu-1404: C:/Ruby200/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/ssh_base.rb:43:in `new'
+E, [2014-08-13T20:57:02.089108 #9056] ERROR -- default-ubuntu-1404: C:/Ruby200/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/ssh_base.rb:43:in `converge'
+E, [2014-08-13T20:57:02.089108 #9056] ERROR -- default-ubuntu-1404: C:/Ruby200/lib/ruby/gems/2.0.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:75:in `converge'
+E, [2014-08-13T20:57:02.089108 #9056] ERROR -- default-ubuntu-1404: C:/Ruby200/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `public_send'
+E, [2014-08-13T20:57:02.089108 #9056] ERROR -- default-ubuntu-1404: C:/Ruby200/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2014-08-13T20:57:02.089108 #9056] ERROR -- default-ubuntu-1404: C:/Ruby200/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `call'
+E, [2014-08-13T20:57:02.089108 #9056] ERROR -- default-ubuntu-1404: C:/Ruby200/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2014-08-13T20:57:02.089108 #9056] ERROR -- default-ubuntu-1404: C:/Ruby200/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:283:in `block in action'
+E, [2014-08-13T20:57:02.089108 #9056] ERROR -- default-ubuntu-1404: C:/Ruby200/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2014-08-13T20:57:02.090108 #9056] ERROR -- default-ubuntu-1404: C:/Ruby200/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:282:in `action'
+E, [2014-08-13T20:57:02.090108 #9056] ERROR -- default-ubuntu-1404: C:/Ruby200/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2014-08-13T20:57:02.090108 #9056] ERROR -- default-ubuntu-1404: C:/Ruby200/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:256:in `converge_action'
+E, [2014-08-13T20:57:02.090108 #9056] ERROR -- default-ubuntu-1404: C:/Ruby200/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2014-08-13T20:57:02.090108 #9056] ERROR -- default-ubuntu-1404: C:/Ruby200/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `each'
+E, [2014-08-13T20:57:02.090108 #9056] ERROR -- default-ubuntu-1404: C:/Ruby200/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2014-08-13T20:57:02.090108 #9056] ERROR -- default-ubuntu-1404: C:/Ruby200/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:119:in `converge'
+E, [2014-08-13T20:57:02.090108 #9056] ERROR -- default-ubuntu-1404: C:/Ruby200/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `public_send'
+E, [2014-08-13T20:57:02.090108 #9056] ERROR -- default-ubuntu-1404: C:/Ruby200/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `block (2 levels) in run_action'
+E, [2014-08-13T20:57:02.091108 #9056] ERROR -- default-ubuntu-1404: ----------------------
+I, [2014-08-13T20:58:30.840184 #5956]  INFO -- default-ubuntu-1404: -----> Converging <default-ubuntu-1404>...
+I, [2014-08-13T20:58:30.850185 #5956]  INFO -- default-ubuntu-1404: Preparing files for transfer
+I, [2014-08-13T20:58:30.854185 #5956]  INFO -- default-ubuntu-1404: Resolving cookbook dependencies with Berkshelf 3.1.5...
+I, [2014-08-13T20:58:31.783238 #5956]  INFO -- default-ubuntu-1404: Removing non-cookbook files before transfer
+I, [2014-08-13T20:58:32.312268 #5956]  INFO -- default-ubuntu-1404: Transfering files to <default-ubuntu-1404>
+[2014-08-14T03:58:39+00:00] INFO: Forking chef instance to converge...I, [2014-08-13T20:58:39.197662 #5956]  INFO -- default-ubuntu-1404: 
+[2014-08-14T03:58:39+00:00] WARN: I, [2014-08-13T20:58:39.209663 #5956]  INFO -- default-ubuntu-1404: 
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *I, [2014-08-13T20:58:39.210663 #5956]  INFO -- default-ubuntu-1404: 
+SSL validation of HTTPS requests is disabled. HTTPS connections are stillI, [2014-08-13T20:58:39.211663 #5956]  INFO -- default-ubuntu-1404: 
+encrypted, but chef is not able to detect forged replies or man in the middleI, [2014-08-13T20:58:39.212663 #5956]  INFO -- default-ubuntu-1404: 
+attacks.I, [2014-08-13T20:58:39.213663 #5956]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T20:58:39.214663 #5956]  INFO -- default-ubuntu-1404: 
+To fix this issue add an entry like this to your configuration file:I, [2014-08-13T20:58:39.216663 #5956]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T20:58:39.216663 #5956]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T20:58:39.217663 #5956]  INFO -- default-ubuntu-1404: ```
+I, [2014-08-13T20:58:39.217663 #5956]  INFO -- default-ubuntu-1404:   # Verify all HTTPS connections (recommended)
+I, [2014-08-13T20:58:39.217663 #5956]  INFO -- default-ubuntu-1404:   ssl_verify_mode :verify_peer
+I, [2014-08-13T20:58:39.217663 #5956]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T20:58:39.217663 #5956]  INFO -- default-ubuntu-1404:   # OR, Verify only connections to chef-server
+I, [2014-08-13T20:58:39.217663 #5956]  INFO -- default-ubuntu-1404:   verify_api_cert true
+I, [2014-08-13T20:58:39.217663 #5956]  INFO -- default-ubuntu-1404: ```
+I, [2014-08-13T20:58:39.218663 #5956]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T20:58:39.218663 #5956]  INFO -- default-ubuntu-1404: To check your SSL configuration, or troubleshoot errors, you can use the
+I, [2014-08-13T20:58:39.218663 #5956]  INFO -- default-ubuntu-1404: `knife ssl check` command like so:
+I, [2014-08-13T20:58:39.218663 #5956]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T20:58:39.218663 #5956]  INFO -- default-ubuntu-1404: ```
+I, [2014-08-13T20:58:39.218663 #5956]  INFO -- default-ubuntu-1404:   knife ssl check -c /tmp/kitchen/solo.rb
+I, [2014-08-13T20:58:39.218663 #5956]  INFO -- default-ubuntu-1404: ```
+I, [2014-08-13T20:58:39.218663 #5956]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T20:58:39.218663 #5956]  INFO -- default-ubuntu-1404: * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+I, [2014-08-13T20:58:39.230664 #5956]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T20:58:39.231664 #5956]  INFO -- default-ubuntu-1404: 
+Starting Chef Client, version 11.14.2[0mI, [2014-08-13T20:58:39.368672 #5956]  INFO -- default-ubuntu-1404: 
+[2014-08-14T03:58:39+00:00] INFO: *** Chef 11.14.2 ***I, [2014-08-13T20:58:39.369672 #5956]  INFO -- default-ubuntu-1404: 
+[2014-08-14T03:58:39+00:00] INFO: Chef-client pid: 1842I, [2014-08-13T20:58:39.371672 #5956]  INFO -- default-ubuntu-1404: 
+[2014-08-14T03:58:42+00:00] INFO: Setting the run_list to ["recipe[sch-mongodb::client]"] from CLI optionsI, [2014-08-13T20:58:42.740865 #5956]  INFO -- default-ubuntu-1404: 
+[2014-08-14T03:58:42+00:00] INFO: Run List is [recipe[sch-mongodb::client]]I, [2014-08-13T20:58:42.753865 #5956]  INFO -- default-ubuntu-1404: 
+[2014-08-14T03:58:42+00:00] INFO: Run List expands to [sch-mongodb::client]I, [2014-08-13T20:58:42.755866 #5956]  INFO -- default-ubuntu-1404: 
+[2014-08-14T03:58:42+00:00] INFO: Starting Chef Run for default-ubuntu-1404I, [2014-08-13T20:58:42.757866 #5956]  INFO -- default-ubuntu-1404: 
+[2014-08-14T03:58:42+00:00] INFO: Running start handlersI, [2014-08-13T20:58:42.758866 #5956]  INFO -- default-ubuntu-1404: 
+[2014-08-14T03:58:42+00:00] INFO: Start handlers complete.I, [2014-08-13T20:58:42.759866 #5956]  INFO -- default-ubuntu-1404: 
+Compiling Cookbooks...[0mI, [2014-08-13T20:58:42.812869 #5956]  INFO -- default-ubuntu-1404: 
+[2014-08-14T03:58:43+00:00] INFO: About to install mongo client version: 2.6.4I, [2014-08-13T20:58:43.064883 #5956]  INFO -- default-ubuntu-1404: 
+Converging 8 resources[0mI, [2014-08-13T20:58:43.065883 #5956]  INFO -- default-ubuntu-1404: 
+Recipe: python::package[0mI, [2014-08-13T20:58:43.077884 #5956]  INFO -- default-ubuntu-1404: 
+  * package[python] action install[2014-08-14T03:58:43+00:00] INFO: Processing package[python] action install (python::package line 41)I, [2014-08-13T20:58:43.098885 #5956]  INFO -- default-ubuntu-1404: 
+ (up to date)I, [2014-08-13T20:58:43.887930 #5956]  INFO -- default-ubuntu-1404: 
+  * package[python-dev] action install[2014-08-14T03:58:43+00:00] INFO: Processing package[python-dev] action install (python::package line 41)I, [2014-08-13T20:58:43.889930 #5956]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T20:59:45.576406 #5956]  INFO -- default-ubuntu-1404: 
+    [32m- install version 2.7.5-5ubuntu3 of package python-dev[0mI, [2014-08-13T20:59:45.579407 #5956]  INFO -- default-ubuntu-1404: 
+[0mRecipe: python::pip[0mI, [2014-08-13T20:59:45.581907 #5956]  INFO -- default-ubuntu-1404: 
+  * cookbook_file[/tmp/kitchen/cache/get-pip.py] action create[2014-08-14T03:59:45+00:00] INFO: Processing cookbook_file[/tmp/kitchen/cache/get-pip.py] action create (python::pip line 36)I, [2014-08-13T20:59:45.584907 #5956]  INFO -- default-ubuntu-1404: 
+[2014-08-14T03:59:45+00:00] INFO: cookbook_file[/tmp/kitchen/cache/get-pip.py] created file /tmp/kitchen/cache/get-pip.pyI, [2014-08-13T20:59:45.586908 #5956]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T20:59:45.587908 #5956]  INFO -- default-ubuntu-1404: 
+    [32m- create new file /tmp/kitchen/cache/get-pip.py[0m[2014-08-14T03:59:46+00:00] INFO: cookbook_file[/tmp/kitchen/cache/get-pip.py] updated file contents /tmp/kitchen/cache/get-pip.pyI, [2014-08-13T20:59:46.439516 #5956]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T20:59:46.460519 #5956]  INFO -- default-ubuntu-1404: 
+    [32m- update content in file /tmp/kitchen/cache/get-pip.py from none to 415b4d[0mI, [2014-08-13T20:59:46.462519 #5956]  INFO -- default-ubuntu-1404: 
+    [37m(long diff of over 1000000 characters, diff output suppressed)[0m[2014-08-14T03:59:46+00:00] INFO: cookbook_file[/tmp/kitchen/cache/get-pip.py] mode changed to 644I, [2014-08-13T20:59:46.466019 #5956]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T20:59:46.467019 #5956]  INFO -- default-ubuntu-1404: 
+    [32m- change mode from '' to '0644'[0mI, [2014-08-13T20:59:46.469020 #5956]  INFO -- default-ubuntu-1404: 
+[0m  * execute[install-pip] action run[2014-08-14T03:59:46+00:00] INFO: Processing execute[install-pip] action run (python::pip line 42)I, [2014-08-13T20:59:46.472020 #5956]  INFO -- default-ubuntu-1404: 
+[2014-08-14T04:00:05+00:00] INFO: execute[install-pip] ran successfullyI, [2014-08-13T21:00:05.109487 #5956]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T21:00:05.110487 #5956]  INFO -- default-ubuntu-1404: 
+    [32m- execute   /usr/bin/python get-pip.pyI, [2014-08-13T21:00:05.113487 #5956]  INFO -- default-ubuntu-1404: 
+[0m  I, [2014-08-13T21:00:05.115487 #5956]  INFO -- default-ubuntu-1404: 
+[0m  * python_pip[setuptools] action upgrade[2014-08-14T04:00:05+00:00] INFO: Processing python_pip[setuptools] action upgrade (python::pip line 50)I, [2014-08-13T21:00:05.124488 #5956]  INFO -- default-ubuntu-1404: 
+[2014-08-14T04:00:05+00:00] INFO: Upgrading python_pip[setuptools] version from uninstalled to latestI, [2014-08-13T21:00:05.699521 #5956]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T21:00:12.478913 #5956]  INFO -- default-ubuntu-1404: 
+    [32m- upgrade python_pip[setuptools] version from  to latest[0mI, [2014-08-13T21:00:12.481913 #5956]  INFO -- default-ubuntu-1404: 
+[0mRecipe: python::virtualenv[0mI, [2014-08-13T21:00:12.483913 #5956]  INFO -- default-ubuntu-1404: 
+  * python_pip[virtualenv] action upgrade[2014-08-14T04:00:12+00:00] INFO: Processing python_pip[virtualenv] action upgrade (python::virtualenv line 23)I, [2014-08-13T21:00:12.486913 #5956]  INFO -- default-ubuntu-1404: 
+[2014-08-14T04:00:13+00:00] INFO: Upgrading python_pip[virtualenv] version from uninstalled to latestI, [2014-08-13T21:00:13.124950 #5956]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T21:00:27.366766 #5956]  INFO -- default-ubuntu-1404: 
+    [32m- upgrade python_pip[virtualenv] version from  to latest[0mI, [2014-08-13T21:00:27.369766 #5956]  INFO -- default-ubuntu-1404: 
+[0mRecipe: sch-mongodb::client[0mI, [2014-08-13T21:00:27.372766 #5956]  INFO -- default-ubuntu-1404: 
+  * python_pip[pymongo] action install[2014-08-14T04:00:27+00:00] INFO: Processing python_pip[pymongo] action install (sch-mongodb::client line 42)I, [2014-08-13T21:00:27.375766 #5956]  INFO -- default-ubuntu-1404: 
+[2014-08-14T04:00:28+00:00] INFO: Installing python_pip[pymongo] version latestI, [2014-08-13T21:00:28.077806 #5956]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T21:00:36.552293 #5956]  INFO -- default-ubuntu-1404: 
+    [32m- install package python_pip[pymongo] version latest[0mI, [2014-08-13T21:00:36.554293 #5956]  INFO -- default-ubuntu-1404: 
+[0m  * package[mongodb-org-shell] action upgrade[2014-08-14T04:00:36+00:00] INFO: Processing package[mongodb-org-shell] action upgrade (sch-mongodb::client line 48)I, [2014-08-13T21:00:36.557294 #5956]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T21:00:36.869311 #5956]  INFO -- default-ubuntu-1404: 
+    [31m* No candidate version available for mongodb-org-shell[0m[0mI, [2014-08-13T21:00:36.873312 #5956]  INFO -- default-ubuntu-1404: 
+    ================================================================================[0mI, [2014-08-13T21:00:36.875312 #5956]  INFO -- default-ubuntu-1404: 
+    [31mError executing action `upgrade` on resource 'package[mongodb-org-shell]'[0mI, [2014-08-13T21:00:36.877312 #5956]  INFO -- default-ubuntu-1404: 
+    ================================================================================[0mI, [2014-08-13T21:00:36.880312 #5956]  INFO -- default-ubuntu-1404: 
+    I, [2014-08-13T21:00:36.881312 #5956]  INFO -- default-ubuntu-1404: 
+[0m    Chef::Exceptions::Package[0mI, [2014-08-13T21:00:36.884312 #5956]  INFO -- default-ubuntu-1404: 
+    -------------------------[0mI, [2014-08-13T21:00:36.887312 #5956]  INFO -- default-ubuntu-1404: 
+    No candidate version available for mongodb-org-shell[0mI, [2014-08-13T21:00:36.919314 #5956]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T21:00:36.920314 #5956]  INFO -- default-ubuntu-1404:     
+I, [2014-08-13T21:00:36.921314 #5956]  INFO -- default-ubuntu-1404: [0m    Resource Declaration:[0m
+I, [2014-08-13T21:00:36.922314 #5956]  INFO -- default-ubuntu-1404:     ---------------------[0m
+I, [2014-08-13T21:00:36.923315 #5956]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T21:00:36.924315 #5956]  INFO -- default-ubuntu-1404:     # In /tmp/kitchen/cookbooks/sch-mongodb/recipes/client.rb
+I, [2014-08-13T21:00:36.925315 #5956]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T21:00:36.925315 #5956]  INFO -- default-ubuntu-1404: [0m    
+[0m    I, [2014-08-13T21:00:36.927315 #5956]  INFO -- default-ubuntu-1404:  48: package "mongodb-org-shell" do
+I, [2014-08-13T21:00:36.928315 #5956]  INFO -- default-ubuntu-1404: [0m    
+I, [2014-08-13T21:00:36.929315 #5956]  INFO -- default-ubuntu-1404:  49:   version node['mongodb']['version']
+I, [2014-08-13T21:00:36.929315 #5956]  INFO -- default-ubuntu-1404: [0m     50:   action :upgrade
+I, [2014-08-13T21:00:36.930315 #5956]  INFO -- default-ubuntu-1404: [0m    
+I, [2014-08-13T21:00:36.932315 #5956]  INFO -- default-ubuntu-1404:  51: end[0m
+I, [2014-08-13T21:00:36.932315 #5956]  INFO -- default-ubuntu-1404:     
+I, [2014-08-13T21:00:36.932315 #5956]  INFO -- default-ubuntu-1404: [0m    Compiled Resource:[0m
+I, [2014-08-13T21:00:36.935315 #5956]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T21:00:36.935315 #5956]  INFO -- default-ubuntu-1404:     ------------------[0m
+I, [2014-08-13T21:00:36.936315 #5956]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T21:00:36.937315 #5956]  INFO -- default-ubuntu-1404:     # Declared in /tmp/kitchen/cookbooks/sch-mongodb/recipes/client.rb:48:in `from_file'
+I, [2014-08-13T21:00:36.939315 #5956]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T21:00:36.939315 #5956]  INFO -- default-ubuntu-1404: [0m    
+I, [2014-08-13T21:00:36.939315 #5956]  INFO -- default-ubuntu-1404: [0m    package("mongodb-org-shell") do
+I, [2014-08-13T21:00:36.939315 #5956]  INFO -- default-ubuntu-1404: [0m      action [:upgrade]
+I, [2014-08-13T21:00:36.939315 #5956]  INFO -- default-ubuntu-1404: [0m      retries 0
+I, [2014-08-13T21:00:36.940316 #5956]  INFO -- default-ubuntu-1404: [0m      retry_delay 2
+I, [2014-08-13T21:00:36.943316 #5956]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T21:00:36.944316 #5956]  INFO -- default-ubuntu-1404: [0m      guard_interpreter :default
+I, [2014-08-13T21:00:36.944316 #5956]  INFO -- default-ubuntu-1404: [0m      package_name "mongodb-org-shell"
+I, [2014-08-13T21:00:36.946316 #5956]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T21:00:36.947316 #5956]  INFO -- default-ubuntu-1404: [0m      version "2.6.4"
+I, [2014-08-13T21:00:36.947316 #5956]  INFO -- default-ubuntu-1404: [0m      timeout 900
+I, [2014-08-13T21:00:36.947316 #5956]  INFO -- default-ubuntu-1404: [0m      cookbook_name :"sch-mongodb"
+I, [2014-08-13T21:00:36.947316 #5956]  INFO -- default-ubuntu-1404: [0m      recipe_name "client"
+I, [2014-08-13T21:00:36.947316 #5956]  INFO -- default-ubuntu-1404: [0m    end
+I, [2014-08-13T21:00:36.947316 #5956]  INFO -- default-ubuntu-1404: [0m    
+I, [2014-08-13T21:00:36.952316 #5956]  INFO -- default-ubuntu-1404: 
+I, [2014-08-13T21:00:36.953316 #5956]  INFO -- default-ubuntu-1404: [0m[2014-08-14T04:00:36+00:00] INFO: Running queued delayed notifications before re-raising exception
+I, [2014-08-13T21:00:36.956316 #5956]  INFO -- default-ubuntu-1404: 
+[0mI, [2014-08-13T21:00:36.957316 #5956]  INFO -- default-ubuntu-1404: 
+Running handlers:[0mI, [2014-08-13T21:00:36.958317 #5956]  INFO -- default-ubuntu-1404: 
+[2014-08-14T04:00:36+00:00] ERROR: Running exception handlersI, [2014-08-13T21:00:36.960317 #5956]  INFO -- default-ubuntu-1404: 
+Running handlers completeI, [2014-08-13T21:00:36.962317 #5956]  INFO -- default-ubuntu-1404: 
+[0m[2014-08-14T04:00:36+00:00] ERROR: Exception handlers completeI, [2014-08-13T21:00:36.965317 #5956]  INFO -- default-ubuntu-1404: 
+[2014-08-14T04:00:36+00:00] FATAL: Stacktrace dumped to /tmp/kitchen/cache/chef-stacktrace.outI, [2014-08-13T21:00:36.966317 #5956]  INFO -- default-ubuntu-1404: 
+Chef Client failed. 6 resources updated in 117.69082909 seconds[0mI, [2014-08-13T21:00:36.968317 #5956]  INFO -- default-ubuntu-1404: 
+[2014-08-14T04:00:36+00:00] ERROR: package[mongodb-org-shell] (sch-mongodb::client line 48) had an error: Chef::Exceptions::Package: No candidate version available for mongodb-org-shellI, [2014-08-13T21:00:36.970317 #5956]  INFO -- default-ubuntu-1404: 
+[2014-08-14T04:00:37+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)I, [2014-08-13T21:00:37.072323 #5956]  INFO -- default-ubuntu-1404: 
+E, [2014-08-13T21:00:37.229332 #5956] ERROR -- default-ubuntu-1404: Converge failed on instance <default-ubuntu-1404>.
+E, [2014-08-13T21:00:37.229332 #5956] ERROR -- default-ubuntu-1404: ------Exception-------
+E, [2014-08-13T21:00:37.229332 #5956] ERROR -- default-ubuntu-1404: Class: Kitchen::ActionFailed
+E, [2014-08-13T21:00:37.229332 #5956] ERROR -- default-ubuntu-1404: Message: SSH exited (1) for command: [sudo -E chef-solo --config /tmp/kitchen/solo.rb --json-attributes /tmp/kitchen/dna.json  --log_level info]
+E, [2014-08-13T21:00:37.230332 #5956] ERROR -- default-ubuntu-1404: ---Nested Exception---
+E, [2014-08-13T21:00:37.230332 #5956] ERROR -- default-ubuntu-1404: Class: Kitchen::SSHFailed
+E, [2014-08-13T21:00:37.230332 #5956] ERROR -- default-ubuntu-1404: Message: SSH exited (1) for command: [sudo -E chef-solo --config /tmp/kitchen/solo.rb --json-attributes /tmp/kitchen/dna.json  --log_level info]
+E, [2014-08-13T21:00:37.230332 #5956] ERROR -- default-ubuntu-1404: ------Backtrace-------
+E, [2014-08-13T21:00:37.230332 #5956] ERROR -- default-ubuntu-1404: C:/Ruby200/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/ssh_base.rb:112:in `rescue in run_remote'
+E, [2014-08-13T21:00:37.230332 #5956] ERROR -- default-ubuntu-1404: C:/Ruby200/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/ssh_base.rb:108:in `run_remote'
+E, [2014-08-13T21:00:37.230332 #5956] ERROR -- default-ubuntu-1404: C:/Ruby200/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/ssh_base.rb:48:in `block in converge'
+E, [2014-08-13T21:00:37.230332 #5956] ERROR -- default-ubuntu-1404: C:/Ruby200/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/ssh.rb:47:in `initialize'
+E, [2014-08-13T21:00:37.231332 #5956] ERROR -- default-ubuntu-1404: C:/Ruby200/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/ssh_base.rb:43:in `new'
+E, [2014-08-13T21:00:37.231332 #5956] ERROR -- default-ubuntu-1404: C:/Ruby200/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/ssh_base.rb:43:in `converge'
+E, [2014-08-13T21:00:37.231332 #5956] ERROR -- default-ubuntu-1404: C:/Ruby200/lib/ruby/gems/2.0.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:75:in `converge'
+E, [2014-08-13T21:00:37.231332 #5956] ERROR -- default-ubuntu-1404: C:/Ruby200/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `public_send'
+E, [2014-08-13T21:00:37.231332 #5956] ERROR -- default-ubuntu-1404: C:/Ruby200/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2014-08-13T21:00:37.231332 #5956] ERROR -- default-ubuntu-1404: C:/Ruby200/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `call'
+E, [2014-08-13T21:00:37.231332 #5956] ERROR -- default-ubuntu-1404: C:/Ruby200/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2014-08-13T21:00:37.231332 #5956] ERROR -- default-ubuntu-1404: C:/Ruby200/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:283:in `block in action'
+E, [2014-08-13T21:00:37.231332 #5956] ERROR -- default-ubuntu-1404: C:/Ruby200/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2014-08-13T21:00:37.232332 #5956] ERROR -- default-ubuntu-1404: C:/Ruby200/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:282:in `action'
+E, [2014-08-13T21:00:37.232332 #5956] ERROR -- default-ubuntu-1404: C:/Ruby200/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2014-08-13T21:00:37.232332 #5956] ERROR -- default-ubuntu-1404: C:/Ruby200/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:256:in `converge_action'
+E, [2014-08-13T21:00:37.232332 #5956] ERROR -- default-ubuntu-1404: C:/Ruby200/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2014-08-13T21:00:37.232332 #5956] ERROR -- default-ubuntu-1404: C:/Ruby200/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `each'
+E, [2014-08-13T21:00:37.232332 #5956] ERROR -- default-ubuntu-1404: C:/Ruby200/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2014-08-13T21:00:37.232332 #5956] ERROR -- default-ubuntu-1404: C:/Ruby200/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:119:in `converge'
+E, [2014-08-13T21:00:37.232332 #5956] ERROR -- default-ubuntu-1404: C:/Ruby200/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `public_send'
+E, [2014-08-13T21:00:37.232332 #5956] ERROR -- default-ubuntu-1404: C:/Ruby200/lib/ruby/gems/2.0.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `block (2 levels) in run_action'
+E, [2014-08-13T21:00:37.232332 #5956] ERROR -- default-ubuntu-1404: ----------------------
+I, [2014-08-13T21:03:18.346547 #6540]  INFO -- default-ubuntu-1404: -----> Destroying <default-ubuntu-1404>...
+I, [2014-08-13T21:03:25.623964 #6540]  INFO -- default-ubuntu-1404: ==> default: Stopping the VMware VM...
+I, [2014-08-13T21:03:31.347291 #6540]  INFO -- default-ubuntu-1404: ==> default: Deleting the VM...
+I, [2014-08-13T21:03:34.447468 #6540]  INFO -- default-ubuntu-1404: Vagrant instance <default-ubuntu-1404> destroyed.
+I, [2014-08-13T21:03:34.454469 #6540]  INFO -- default-ubuntu-1404: Finished destroying <default-ubuntu-1404> (0m16.10s).
