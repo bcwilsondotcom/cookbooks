@@ -26,6 +26,6 @@
 
 include_recipe "mongodb::default"
 
-mongodb_instance "mongodb" do
+mongodb_instance "mongod" do
   dbpath node['mongodb']['config']['dbpath']
 end
