@@ -32,12 +32,15 @@ if node['kibana']['user'].empty?
   end
 else
   kibana_user = node['kibana']['user']
-  kibana_user kibana_user do
-    name kibana_user
-    group kibana_user
-    home node['kibana']['install_dir']
-    action :create
-  end
+end
+
+log("Kibaba user is " + kibana_user)
+
+kibana_user kibana_user do
+  name kibana_user
+  group kibana_user
+  home node['kibana']['install_dir']
+  action :create
 end
 
 kibana_install 'kibana' do
